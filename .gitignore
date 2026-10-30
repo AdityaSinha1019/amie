@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+reports/*.json
+.env
+.env.*
+!.env.example
+.DS_Store
+.coverage
+htmlcov/
+.ruff_cache/
+# Keep licensed/private market data and trained artifacts local.
+data/historical/
+data/raw/
+artifacts/
+models/
+*.joblib
+*.pkl

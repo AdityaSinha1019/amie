@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "amie-paper"
+version = "0.1.0"
+description = "Paper-only Adaptive Market Intelligence Engine"
+requires-python = ">=3.11,<3.15"
+dependencies = ["numpy>=2.1,<3", "pandas>=2.2,<4", "scikit-learn>=1.6,<2", "xgboost>=3.0,<4", "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "httpx>=0.28,<1"]
+
+[project.scripts]
+amie = "amie.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/amie"]

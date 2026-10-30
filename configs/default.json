@@ -1,0 +1,13 @@
+{
+  "mode": "paper",
+  "initial_equity": 100000,
+  "min_train": 100,
+  "test_size": 50,
+  "confidence": 0.6,
+  "risk_fraction": 0.005,
+  "max_exposure": 1.0,
+  "max_drawdown": 0.1,
+  "eurusd_cost_bps": 1.0,
+  "nifty50_cost_bps": 3.0,
+  "seed": 42
+}
